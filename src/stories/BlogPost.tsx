@@ -34,7 +34,19 @@ export const BlogPost: React.FC<BlogPostProps> = ({
       >
         {title}
       </Box>
+      <Box
+        className={['blog-post-date'].join(' ')}
+      >
+        {date.toUTCString()}
+      </Box>
+      <Box
+        className={['blog-post-tag-list'].join(' ')}
+      >
+        {tags.map((tag) => <a href={tag.url} className={['blog-post-tag'].join(' ')}>#{tag.name}</a>)}
+      </Box>
+
       {intro}
+
     </Box>
   )
 };

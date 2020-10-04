@@ -18,7 +18,7 @@ const Template: Story<BlogPostProps> = (args) => {
 export const SimpleBlogPost = Template.bind({});
 SimpleBlogPost.args = {
   title: "My blog post title",
-  intro: "This is an introduction to the post content",
+  intro: "This is an introduction to the post content. it can be a bit long so we should make sure it wraps around when it hits the right side of the screen.",
   date: new Date(),
   tags: [
     {
