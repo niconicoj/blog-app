@@ -1,0 +1,17 @@
+.box {
+  font-family: 'Fira Mono', 'Helvetica Neue', monospace, Helvetica, Arial, sans-serif;
+  background-color: #181818;
+  padding: 8px;
+  color: #d4be98;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.border-single {
+  border: 2px solid #d4be98;
+}
+
+.border-double {
+  border: 4px double #d4be98;
+}
+

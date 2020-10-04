@@ -1,0 +1,9 @@
+.blog-post {
+  display: block;
+  padding-top: 32px;
+  margin-top: 32px;
+}
+.blog-post-title {
+  position: absolute;
+  transform: translateY(-50%) translateY(-32px);
+}
