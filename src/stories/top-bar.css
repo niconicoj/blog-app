@@ -1,0 +1,27 @@
+.top-bar {
+  text-align: center;
+  position: relative;
+}
+
+.top-bar:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-top: 2px solid #d4be98;
+  background: #181818;
+  width:100%;
+  transform: translateY(-50%);
+}
+
+.top-bar-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.top-bar-el {
+  color: #7daea3;
+  margin: 1rem;
+}
