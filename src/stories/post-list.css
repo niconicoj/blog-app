@@ -1,0 +1,10 @@
+.post-list {
+  padding-top: 1.5rem;
+}
+
+.post-list-title {
+  color: #a9b665;
+  top: 0;
+  position: absolute;
+  transform: translateY(-50%);
+}
