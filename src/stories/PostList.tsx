@@ -18,18 +18,23 @@ export const PostList: React.FC<PostListProps> = ({
     <Box 
       {...props}
       border="single"
-        className={['post-list'].join(' ')}
+      className={['post-list'].join(' ')}
     >
       <Box
+        border="single"
         className={['post-list-title'].join(' ')}
       >
         Latest Post
       </Box>
-      {
-        posts.map(post => {
-          return <BlogPost {...post}/>
-        })
-      }
+      <div
+        className={['post-list-container'].join(' ')}
+      >
+        {
+          posts.map(post => {
+            return <BlogPost {...post}/>
+          })
+        }
+      </div>
     </Box>
   );
 };

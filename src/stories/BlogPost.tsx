@@ -29,7 +29,6 @@ export const BlogPost: React.FC<BlogPostProps> = ({
     >
       <Box
         className={['blog-post-title'].join(' ')}
-        border='single'
         style={{...hover && {borderColor: "#d3869b", color: "#e78a4e"}}}
       >
         {title}
