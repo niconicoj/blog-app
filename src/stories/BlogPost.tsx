@@ -41,7 +41,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({
       <Box
         className={['blog-post-tag-list'].join(' ')}
       >
-        {tags.map((tag) => <a href={tag.url} className={['blog-post-tag'].join(' ')}>#{tag.name}</a>)}
+        {tags.map((tag, i) => <a href={tag.url} className={['blog-post-tag'].join(' ')} key={i}>#{tag.name}</a>)}
       </Box>
 
       {intro}

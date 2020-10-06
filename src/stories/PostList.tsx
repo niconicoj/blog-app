@@ -30,8 +30,8 @@ export const PostList: React.FC<PostListProps> = ({
         className={['post-list-container'].join(' ')}
       >
         {
-          posts.map(post => {
-            return <BlogPost {...post}/>
+          posts.map((post, i) => {
+            return <BlogPost {...post} key={i}/>
           })
         }
       </div>
